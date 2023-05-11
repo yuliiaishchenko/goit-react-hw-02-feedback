@@ -8,6 +8,7 @@ export const SectionContainer = styled.section`
     border-radius: 15px;
     margin-bottom: 15px;
     padding: 10px;
+    margin-top: 15px;
 `;
 
 

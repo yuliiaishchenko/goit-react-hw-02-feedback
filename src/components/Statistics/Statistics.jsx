@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { StatisticsItem, StatisticsList } from './Statistics.styled';
+import { StatisticsItem, StatisticsList, StatisticText } from './Statistics.styled';
 
 export const Statistics = ({
     good,
@@ -18,10 +18,10 @@ export const Statistics = ({
 
     return (
 <StatisticsList>
-{statArray.map(({ statItem, title }) => (<StatisticsItem key={title}><p>
-    {title}:{''}
+{statArray.map(({ statItem, title }) => (<StatisticsItem key={title}><StatisticText>
+    {title} : {''}
     <span>
-        {title !== 'Positive feedbacks' ? statItem : positivePercentage + '%'}</span></p> </StatisticsItem>))}
+        {title !== 'Positive feedbacks' ? statItem : positivePercentage + '%'}</span></StatisticText> </StatisticsItem>))}
 
 </StatisticsList>
 
